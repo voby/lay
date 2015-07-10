@@ -1,5 +1,5 @@
 {
-  "name": "layouts-to-rename!",
+  "name": "lay",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -12,5 +12,8 @@
     "gulp-plumber": "^1.0.1",
     "gulp-stylus": "^2.0.5",
     "gulp-watch": "^4.2.4"
+  },
+  "dependencies": {
+    "stylus-normalize": "^3.0.3"
   }
 }

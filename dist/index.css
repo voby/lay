@@ -1,3 +1,433 @@
-p {
-  color: #808080;
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+header {
+  background-color: #673ab7;
+  height: 64px;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+.logo {
+  line-height: 64px;
+  color: #fff;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+}
+.menu span {
+  display: block;
+  width: 95%;
+  margin: 4px auto;
+  height: 7px;
+  background-color: rgba(255,255,255,0.75);
+}
+.menu:hover span {
+  background-color: #fff;
+}
+nav {
+  background-color: #fcfcfc;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  border-right: solid 1px #ddd;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  padding: 0 30px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #444;
+}
+aside {
+  background-color: #fff;
+  margin-left: 300px;
+}
+aside section {
+  background-color: #fff;
+  width: 350px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  border: solid 1px #ddd;
+}
+aside section div {
+  border-bottom: solid 1px #ddd;
+  display: inline-block;
+}
+aside section div img {
+  width: 46%;
+  margin: 2%;
+  float: left;
+}
+article {
+  margin-right: 350px;
+  background-color: #fff;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+}
+article img {
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+article img:nth-child(2n + 1) {
+  float: left;
+}
+article img:nth-child(2n) {
+  float: right;
+}
+footer {
+  background-color: #ededed;
+  height: 64px;
+  margin-top: -64px;
+  position: relative;
+  clear: both;
+  border-top: solid 1px #ddd;
+}
+@media (min-width: 1280px) and (max-width: 1500px) {
+  article {
+    margin-right: 175px;
+  }
+  aside section {
+    width: 175px;
+    border-bottom: 0;
+  }
+  aside section div {
+    border-bottom: 0;
+  }
+  aside section div img {
+    width: 96%;
+    margin: 2%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1280px) {
+  article {
+    margin-right: 0;
+  }
+  aside section {
+    position: static;
+    display: inline-block;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: -1px;
+    border-left: 0;
+    border-right: 0;
+  }
+  aside section div {
+    margin-bottom: -5px;
+  }
+  aside section div img {
+    width: 12%;
+    margin: 2.33%;
+  }
+}
+@media (min-width: 420px) and (max-width: 900px) {
+  header {
+    text-align: left;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  aside {
+    margin: 0;
+  }
+  article {
+    margin-right: 0;
+    font-size: 1.2rem;
+    clear: both;
+  }
+  article img {
+    margin: 5px auto;
+    clear: both;
+    float: none !important;
+    display: block;
+  }
+  aside section {
+    position: static;
+    display: inline-block;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: -1px;
+    border-left: 0;
+    border-right: 0;
+  }
+  aside section div {
+    margin-bottom: -5px;
+  }
+  aside section div img {
+    width: 30%;
+    margin: 1.66%;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    text-align: left;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  article {
+    font-size: 1rem;
+    margin: 0;
+  }
+  article img {
+    margin: 5px auto;
+    clear: both;
+    float: none !important;
+    display: block;
+  }
+  aside {
+    margin: 0;
+  }
+  aside section {
+    position: static;
+    display: inline-block;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: -1px;
+    border-left: 0;
+    border-right: 0;
+  }
+  aside section div {
+    margin-bottom: -5px;
+  }
+  aside section div img {
+    width: 46%;
+    margin: 2%;
+  }
+}
+@media (min-width: 1500px) and (max-height: 653px) {
+  aside section {
+    display: none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1500px) {
+  aside section {
+    margin-bottom: 64px;
+  }
+  aside section div {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: #fcfcfc;
+}
+main {
+  background-color: #fff;
+  min-height: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
 }

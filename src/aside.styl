@@ -1,0 +1,39 @@
+aside
+	background-color white
+	margin-left sidebar-width
+	
+aside section
+	background-color white
+	width gallery-width
+	position absolute
+	top header-height
+	right 0
+	bottom 0
+	border solid 1px #ddd
+
+aside section div
+	border-bottom solid 1px #ddd
+	display inline-block
+
+aside section div img
+	width 46%
+	margin 2%
+	float left
+	
+article
+	margin-right gallery-width
+	background-color white
+	padding 20px 40px
+	font-size 1.4rem
+
+article img 
+	margin 10px
+	padding 5px
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+	
+article img:nth-child(2n + 1)
+	float left
+
+article img:nth-child(2n)
+	float right
+			

@@ -15,9 +15,7 @@ gulp.task("build", function() {
 });
 
 gulp.task("watch", function() {
-	gulp.src("src/index.styl")
-		.pipe(watch('src/**/*.styl'))
-		.pipe(plumber())
-		.pipe(stylus())
-		.pipe(gulp.dest("dist"));
+	watch('src/*.styl', function() {
+		gulp.start('build');
+	});
 });

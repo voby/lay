@@ -1,0 +1,40 @@
+header
+	background-color main-color
+	height header-height
+	width 100%
+	z-index 1
+	position absolute
+	top 0
+	left 0
+	text-align center
+	box-shadow 0 2px 5px rgba(0,0,0,0.26)
+
+.logo
+	line-height header-height
+	color text-light-color
+	display inline-block
+	font-size 2rem
+	font-weight 700
+	margin-left 20px
+	
+.menu
+	display none
+	position absolute
+	top ((header-height - 40px) / 2)
+	right ((header-height - 40px) / 2)
+	width 40px
+	height 40px
+	padding 2px
+	
+	span
+		display block
+		width 95%
+		margin 4px auto
+		height 7px
+		background-color rgba(255,255,255,.75)
+		
+.menu:hover span
+	background-color white
+	
+	
+	

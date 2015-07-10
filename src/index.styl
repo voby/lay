@@ -1,2 +1,24 @@
-p
-	color grey
+@import '../node_modules/stylus-normalize/normalize'
+@import 'variables'
+@import 'header'
+@import 'sidebar'
+@import 'aside'
+@import 'footer'
+@import 'responsive'
+
+*
+	box-sizing border-box
+
+body, html
+	height 100%
+
+body
+	background-color #fcfcfc	
+
+main
+	background-color white
+	min-height 100%
+	padding-top header-height
+	padding-bottom footer-height
+	position relative
+	
